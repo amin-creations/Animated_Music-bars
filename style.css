@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+}
+
+body {
+  position: relative;
+
+  min-height: 100vh;
+  background-color: #333;
+}
+
+.container {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: 37%;
+  top: 8%;
+  border-radius: 30px;
+  background-color: rgb(255, 28, 66);
+  box-shadow: 0 0 60px rgb(255, 28, 66);
+  animation: animate 3s ease-in 2s infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.h_box {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 23%;
+  left: 55%;
+  background-color: rgb(254, 129, 140);
+}
+
+.v_box {
+  position: absolute;
+  width: 20px;
+  height: 120px;
+  top: 23%;
+  left: 49.5%;
+  background-color: rgb(254, 129, 140);
+}
+
+.circle {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: 45%;
+  left: 32.5%;
+  background-color: rgb(247, 140, 147);
+}
+
+.bar_box {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 300px;
+  height: 100px;
+  left: 39%;
+  top: 60%;
+}
+
+.bar {
+  width: 8px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--c);
+  animation: motion 1.5s ease-in-out infinite;
+  box-shadow: 0 0 5px var(--c);
+}
+
+.bar:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.bar:nth-child(2) {
+  animation-delay: 1.5s;
+}
+
+.bar:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.bar:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.bar:nth-child(5) {
+  animation-delay: 1.7s;
+}
+
+.bar:nth-child(6) {
+  animation-delay: 0.8s;
+}
+
+.bar:nth-child(7) {
+  animation-delay: 1s;
+}
+
+.bar:nth-child(8) {
+  animation-delay: 1.9s;
+}
+
+.bar:nth-child(9) {
+  animation-delay: 2s;
+}
+
+.bar:nth-child(10) {
+  animation-delay: 1s;
+}
+
+.bar:nth-child(11) {
+  animation-delay: 1.2s;
+}
+
+.bar:nth-child(12) {
+  animation-delay: 1.6s;
+}
+
+@keyframes motion {
+  0%,
+  100% {
+    height: 5px;
+  }
+
+  50% {
+    height: 35px;
+  }
+}
