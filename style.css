@@ -1,3 +1,4 @@
+/* basic page styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +7,15 @@
   transition: 0.5s ease;
 }
 
+/* body and background */
 body {
   position: relative;
 
   min-height: 100vh;
   background-color: #333;
 }
+
+/* container styling */
 
 .container {
   position: absolute;
@@ -25,6 +29,8 @@ body {
   animation: animate 3s ease-in 2s infinite;
 }
 
+/* animating the container */
+
 @keyframes animate {
   0%,
   100% {
@@ -36,6 +42,8 @@ body {
   }
 }
 
+/* top horizontal box of music icon */
+
 .h_box {
   position: absolute;
   width: 30px;
@@ -44,6 +52,8 @@ body {
   left: 55%;
   background-color: rgb(254, 129, 140);
 }
+
+/* vertical box of music icon */
 
 .v_box {
   position: absolute;
@@ -54,6 +64,8 @@ body {
   background-color: rgb(254, 129, 140);
 }
 
+/* circle of music icon */
+
 .circle {
   position: absolute;
   width: 80px;
@@ -63,6 +75,8 @@ body {
   left: 32.5%;
   background-color: rgb(247, 140, 147);
 }
+
+/* bar container styling */
 
 .bar_box {
   position: absolute;
@@ -76,6 +90,8 @@ body {
   top: 60%;
 }
 
+/* styling of the bars */
+
 .bar {
   width: 8px;
   height: 5px;
@@ -84,6 +100,8 @@ body {
   animation: motion 1.5s ease-in-out infinite;
   box-shadow: 0 0 5px var(--c);
 }
+
+/* custome animation delay for each bar */
 
 .bar:nth-child(1) {
   animation-delay: 1s;
@@ -132,6 +150,8 @@ body {
 .bar:nth-child(12) {
   animation-delay: 1.6s;
 }
+
+/* bars animation */
 
 @keyframes motion {
   0%,
